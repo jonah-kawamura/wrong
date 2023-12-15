@@ -1,0 +1,32 @@
+/* projects.css */
+
+.card {
+    /* Add other styling properties as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#project1::before {
+    background-image: url('images/academic_integrity_office.jpg');
+}
+
+#project2::before {
+    background-image: url('images/main-qimg-0812f79b5a669135cfb3bc0f3a6ba88f-lq.jpg');
+}
+
+#project3::before {
+    background-image: url('images/groundBeef\ copy.png');
+}

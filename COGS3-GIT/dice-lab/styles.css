@@ -1,0 +1,66 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #95400b;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+  font-weight: 500;
+  color: #3cc6d0;
+}
+
+h2, h3 {
+  margin: 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #211ea4;
+}
+
+p {
+  color: #3cd048;
+}
+
+img {
+  width: 80%;
+  background-color: #8e1fef;
+  border-radius: 30%;
+  mix-blend-mode: hard-light;
+}
+
+
+.myBtn {
+  background-color: #3498db; /* Set a cool background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+  /* Add hover effect */
+  &:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+  }
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}

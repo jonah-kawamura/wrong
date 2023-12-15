@@ -1,0 +1,54 @@
+body {
+    background-color: #F7D6BF;
+}
+caption {
+    font-size:xx-large;
+}
+.header {
+    font-size: x-large;
+}
+.time {
+    font-family: cursive, leucida handwriting;
+}
+h2 {
+    color:aqua;
+    text-align: center;
+}
+a:link{
+    color: rgb(34, 200, 13);
+    background-color: rgb(159, 226, 226);
+    padding: 5px 5px;
+    display: block;
+    text-decoration: none;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+a:active{
+    background-color: yellow;
+}
+a:visited {
+    color: red;
+}
+
+a:hover {
+    background-color: rgb(236, 164, 21);
+    color: black;
+}
+
+td {
+    color: green;
+    text-align: center;
+    font-style: italic;
+    background-color: white;
+}
+hr {
+    border-style: none;
+    border-top-style: none;
+    border-width: 8px;
+    width: 10%;
+    color: blue;
+}
+img {
+    border-radius: 25%;
+    height: 60px;
+}

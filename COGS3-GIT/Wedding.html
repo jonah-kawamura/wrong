@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Planner</title>
+</head>
+
+<body>
+    <h1>Wedding Planner</h1>
+
+    <script>
+        function distributeGuestsWithExtras(totalGuests, numberOfTables) {
+
+            // Math.floor is going to just take the whole numbr answer of the equation in the () and leave out the remainders (leftovers)
+            let peoplePerTable = Math.floor(totalGuests  / numberOfTables);
+            // This line grabs just the remainders of the equation total candy / number of kids and calls it "leftoverCandy"
+            let leftoverPeople = totalGuests % numberOfTables ;
+
+            return {
+                totalGuests: totalGuests,
+                numberOfTables: numberOfTables,
+                peoplePerTable: peoplePerTable,
+                leftoverPeople: leftoverPeople
+            };
+        }
+
+        // A prompt is easy to get user input
+        let totalGuestsInput = prompt("Enter the total amount of guests:");
+        let numberOfTablesInput = prompt("Enter the number of tables:");
+
+        // convert the input into numeric data types
+        let totalGuests = parseInt(totalGuestsInput);
+        let numberOfTables = parseInt(numberOfTablesInput);
+
+        // it is good programming practice to validate the input 
+        if (isNaN(totalGuests) || isNaN(numberOfTables) || totalGuests < 0 || numberOfTables <= 0) {
+            alert("Invalid input. Please enter valid positive numbers.");
+        } else {
+            // This is where the results of our equations are plugged in
+            // The Math.floor result is the candy per kid and the remainder/ "leftover" result is the candy kept
+            let result = distributeGuestsWithExtras(totalGuests, numberOfTables);
+            alert(`Your guests will be seated ${result.peoplePerTable} to a table.\nThe remaining ${result.leftoverPeople} will have to join a table or tables.`);
+        }
+    </script>
+</body>
+
+</html>

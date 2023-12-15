@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to right, #9d10bd, #3925e9); /* Adjust the colors as needed */
+    color: #fff; /* Set text color to white for better contrast */
+}
+
+.header-image {
+    width: 70%;
+    height: 500px;
+    display: block;
+    margin-left: 350px;
+    border-radius: 15%;
+}
+
+.image-p {
+    display: flex;
+    align-items: center;
+}
+
+.image-p img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* This centers the image horizontally */
+}
+
+.intro-p {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.hobbies-p {
+    text-align: center;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+#imageCarousel {
+    max-height: 500px; /* Set the maximum height for the carousel container */
+    margin: 0 auto; /* Center the carousel on the page */
+    max-width: 400px;
+}
+
+#imageCarousel img {
+    max-height: 500px; /* Set the maximum height for the carousel images */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
